@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <title>Jenkins Chrome Extension</title>
+    <link rel="stylesheet" type="text/css" href="jenkins-ext-popup.css">
+    <script src="../common/jenkins-ext-common.js"></script>
+    <script src="jenkins-ext-popup.js"></script>
+</head>
+
+<body class="jenkins-ext-popup-body">
+    <div class="jenkins-ext-popup">
+        <div class="jenkins-ext-popup__header">
+            <img src="../img/jenkins-icon-96px.png" class="jenkins-ext-popup__header__image" alt="icon" />
+            <span class="jenkins-ext-popup__header__title">Jenkins Chrome Extension</span>
+        </div>
+        <div class="jenkins-ext-popup__content">
+
+            <label for="url-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-required-indicator">* </span>
+                    <span>URL pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="url-pattern-input" class="jenkins-ext-popup-input" />
+
+            <label for="my-name-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-required-indicator">* </span>
+                    <span>My name </span>
+                    <span class="jenkins-ext-popup-hint">(as appears in the commiter list e.g. John Doe)</span>
+                </label>
+            <input id="my-name-input" class="jenkins-ext-popup-input" />
+
+            <label for="highlight-names-input" class="jenkins-ext-popup-label">
+                    <span>Additional names to highlight </span>
+                    <span class="jenkins-ext-popup-hint">(commas for multiple names e.g. John Doe, Jane Doe)</span>
+                </label>
+            <input id="highlight-names-input" class="jenkins-ext-popup-input" />
+
+            <label for="commit-link-prefix-input" class="jenkins-ext-popup-label">
+                    <span>Commit link prefix </span>
+                    <span class="jenkins-ext-popup-hint">(SHA1 is concatenated to this as a suffix)</span>
+                </label>
+            <input id="commit-link-prefix-input" class="jenkins-ext-popup-input" />
+
+            <label for="green-commit-msg-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-color-mark jenkins-ext-popup-color-mark--green"></span>
+                    <span>Green commit message pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="green-commit-msg-pattern-input" class="jenkins-ext-popup-input" />
+
+            <label for="yellow-commit-msg-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-color-mark jenkins-ext-popup-color-mark--yellow"></span>
+                    <span>Yellow commit message pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="yellow-commit-msg-pattern-input" class="jenkins-ext-popup-input" />
+
+            <label for="red-commit-msg-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-color-mark jenkins-ext-popup-color-mark--red"></span>
+                    <span>Red commit message pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="red-commit-msg-pattern-input" class="jenkins-ext-popup-input" />
+
+            <label for="blue-commit-msg-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-color-mark jenkins-ext-popup-color-mark--blue"></span>
+                    <span>Blue commit message pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="blue-commit-msg-pattern-input" class="jenkins-ext-popup-input" />
+
+            <label for="purple-commit-msg-pattern-input" class="jenkins-ext-popup-label">
+                    <span class="jenkins-ext-popup-color-mark jenkins-ext-popup-color-mark--purple"></span>
+                    <span>Purple commit message pattern </span>
+                    <span class="jenkins-ext-popup-hint">(javascript regex format)</span>
+                </label>
+            <input id="purple-commit-msg-pattern-input" class="jenkins-ext-popup-input" />
+
+        </div>
+        <div class="jenkins-ext-popup__footer">
+            <button id="jenkins-ext-popup-cancel-button" class="jenkins-ext-popup__footer__button">Cancel</button>
+            <button id="jenkins-ext-popup-save-button" class="jenkins-ext-popup__footer__button">Save</button>
+        </div>
+    </div>
+</body>
+
+</html>
